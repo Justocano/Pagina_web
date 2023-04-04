@@ -1,0 +1,152 @@
+/* todas las paginas */
+body {
+    padding: 20px;
+}
+#navbar{
+    background-color: cornflowerblue;
+    padding: 0%;
+}
+
+img{
+    width: 100%;
+}
+
+nav{
+    padding: 0%;
+}
+
+div{
+    padding: 0%;
+}
+
+/* formularios */
+
+#apellidos,
+#nombres,
+#contraseña,
+#rut,
+#correo,
+#direccion,
+#repetircontraseña,
+input[type="checkbox"],
+input[type="search"],
+button[class="btn btn-outline-success"]{
+    border: 1px solid black;
+}
+
+#formulario{
+    border: 3px solid cornflowerblue;
+}
+
+
+#btn{
+    padding: 20px;
+}
+
+#info{
+    margin-top: 20px;
+    border: 1px solid  cornflowerblue;
+}
+
+#btn{
+    text-align: center;
+}
+
+#id,
+#Select,
+#nombre,
+#descripcion,
+#precio,
+#desc-subscriptor,
+#desc-oferta{
+    border: 1px solid black;
+}
+
+#password{
+    margin: 0%;
+}
+
+/* inicio */
+
+img[class="producto"]{
+    padding: 30px;
+}
+
+.menu-superior {
+    text-align: right;
+}
+
+.menu-superior li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.producto {
+    width: 100%;
+}
+
+#producto{
+    border: 1px solid rgb(113, 113, 113);
+}
+
+
+.titulo{
+    color: black;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* tablas */
+
+table[class="table"]{
+    border: 1px solid black;
+}
+
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translate(-3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.separar {
+  word-spacing: 10px; 
+}
+
+
+
