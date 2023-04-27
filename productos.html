@@ -8,164 +8,143 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Productos</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!-- encabezado -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid" id="navbar">
-                <a class="navbar-brand" href="inicio.html">PetShop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="administracion.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="registro.html">Mis datos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="administracion.html">Administrar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="inicio.html">Cerrar sesion</a>
-                        </li>
-                    </ul>
-                </div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <!-- formulario completo -->
-        <form action id="formulario">
-            <div class="row">
-                <div class="col-8">
-                    <!-- formulario datos -->
-                    <form class="from-box" id="info" novalidate>
-                        <div class="col-sm-12 ">
-                            <label for="id" class="form-label">Id:</label>
-                            <input type="text"  class="form-control" id="id" value="5"
-                                required>
+    <!-- encabezado -->
+    <div id="menu-admin">
+    </div>
+    <div class="main py-2 bg-light">
+        <div class="conntainer mt-3" id="registro">
+            <section >
+                <h1>Mantenedro de Productos</h1>
+                <br>
+                <form class="row g-3 needs-validation" action="" novalidate>
+                    <div class="container-fluid" >
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="mb-3  fw-bold">
+                                    <label for="id" class="form-label">Id:</label>
+                                    <input type="text"  class="form-control" id="id" value="5" required>
+                                </div>
+                                <div class="mb-3 fw-bold">
+                                    <label for="Select" class="form-label">Categoria:</label>
+                                    <select id="Select" class="form-select">
+                                        <option>
+                                            Perros
+                                        </option>
+                                        <option>
+                                            Gatos
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 fw-bold">
+                                    <label for="nombre" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombre" value="Belcando pouch | sobres" required>
+                                </div>
+                                <div class="mb-3 fw-bold">
+                                    <label for="descripcion" class="form-label">Descripcion:</label>
+                                    <textarea class="form-control" id="descripcion" rows="4"></textarea>
+                                    
+                                </div>
+                                <div class="mb-3 fw-bold">
+                                    <label for="precio" class="form-label">Precio:</label>
+                                    <input type="text" class="form-control" id="precio" value="$3.000-$80.000" declare>
+                                </div>
+                                <div class="mb-3 fw-bold">
+                                    <label for="desc-subscriptor" class="form-label">% Desc. Subscriptor:</label>
+                                    <input type="text" class="form-control" id="desc-subscriptor" value="5%" declare>
+                                </div>
+                                <div class="mb-3 fw-bold">
+                                    <label for="desc-oferta" class="form-label">% Desc. Oferta:</label>
+                                    <input type="text" class="form-control" id="desc-oferta" value="2%" declare>
+                                </div>
+                                
+                                <button class="btn btn-primary" type="submit">Guardar </button>
+                                <button class="btn btn-primary" type="submit">Nuevo </button>
+                                <button class="btn btn-primary" type="reset">Eliminar </button>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="img/Imagen5.png" alt="" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="file" class="form-control" >
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="Select" class="form-label">Categoria:</label>
-                            <select id="Select" class="form-select">
-                                <option>
-                                    Perros
-                                </option>
-                                <option>
-                                    Gatos
-                                </option>
-                            </select>
-                        </div>
-                        <div class="col-sm-12 ">
-                            <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" value="Belcando pouch | sobres" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="descripcion" class="form-label">Descripcion:</label>
-                            <textarea class="form-control" id="descripcion" rows="4"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="precio" class="form-label">Precio:</label>
-                            <input type="text" class="form-control" id="precio" value="$3.000-$80.000" declare>
-                        </div>
-                        <div class="mb-3">
-                            <label for="desc-subscriptor" class="form-label">% Desc. Subscriptor:</label>
-                            <input type="text" class="form-control" id="desc-subscriptor" value="5%" declare>
-                        </div>
-                        <div class="mb-3">
-                            <label for="desc-oferta" class="form-label">% Desc. Oferta:</label>
-                            <input type="text" class="form-control" id="desc-oferta" value="2%" declare>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-3">
-                    <!-- botones formulario -->
-                    <br><br><br>
-                    <img src="img/Imagen5.png" alt="">
-                    <br><br>
-                    <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
-                        <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
-                    </form>
-                </div>
-                <div class="col-12" id="btn">
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Guardar </button>
-                        <button class="btn btn-primary" type="submit">Nuevo </button>
-                        <button class="btn btn-primary" type="reset">Borrar </button>
                     </div>
-                </div>
-            </div>
-        </form>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripsion</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">% Desc. Suscriptor</th>
+                    <th scope="col">% Desc. Ofertas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Perro</td>
+                    <td>Belcando mastercraft topping </td>
+                    <td>un alimento húmedo para perros de todas las edades. Este alimento húmedo de origen
+                        alemán</td>
+                    <td>$3.490</td>
+                    <td>5%</td>
+                    <td>2%</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Perro</td>
+                    <td>Belcando pouch | sobres </td>
+                    <td>Jugosa carne mejorada con delicados ingredientes y cuidadosamente cocinada en bolsas
+                        individuales</td>
+                    <td>$2.990</td>
+                    <td>5%</td>
+                    <td>2%</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Perro</td>
+                    <td>Fit formula adulto </td>
+                    <td>un alimento completo y balanceado para satisfacer las necesidades nutricionales de
+                        perros adultos </td>
+                    <td>$39.900</td>
+                    <td>5%</td>
+                    <td>2%</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Perro</td>
+                    <td>Nomade adulto 3Kg </td>
+                    <td>permite una mayor absorción de nutrientes, además contiene XPC</td>
+                    <td>$10.990</td>
+                    <td>5%</td>
+                    <td>2%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container-fluid">
         <div class="row">
             <!-- tabla -->
-            <div class="col-12">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Categoria</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Descripsion</th>
-                            <th scope="col">Precio</th>
-                            <th scope="col">% Desc. Suscriptor</th>
-                            <th scope="col">% Desc. Ofertas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Perro</td>
-                            <td>Belcando mastercraft topping </td>
-                            <td>un alimento húmedo para perros de todas las edades. Este alimento húmedo de origen
-                                alemán</td>
-                            <td>$3.490</td>
-                            <td>5%</td>
-                            <td>2%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Perro</td>
-                            <td>Belcando pouch | sobres </td>
-                            <td>Jugosa carne mejorada con delicados ingredientes y cuidadosamente cocinada en bolsas
-                                individuales</td>
-                            <td>$2.990</td>
-                            <td>5%</td>
-                            <td>2%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Perro</td>
-                            <td>Fit formula adulto </td>
-                            <td>un alimento completo y balanceado para satisfacer las necesidades nutricionales de
-                                perros adultos </td>
-                            <td>$39.900</td>
-                            <td>5%</td>
-                            <td>2%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>Perro</td>
-                            <td>Nomade adulto 3Kg </td>
-                            <td>permite una mayor absorción de nutrientes, además contiene XPC</td>
-                            <td>$10.990</td>
-                            <td>5%</td>
-                            <td>2%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            
             <!-- pie de pagina  -->
             <div class="col-12">
                 <hr>
@@ -201,6 +180,7 @@
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous">
         </script>
+        <script src="js/navbarAdmin.js"></script>
 </body>
 
 </html>

@@ -11,48 +11,12 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!-- cabecera -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid" id="navbar">
-                <a class="navbar-brand" href="inicio.html">PetShop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="inicioCliente.html">inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="nosotros.html">nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="registro.html">Mis datos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="miscompras.html">Mis compras anteriores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="inicio.html">Cerrar sesion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="carrito.html">carrito</a>
-                        </li>
-                    </ul>
-                </div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <!-- cuerpo de la pagina -->
-        <div class="row">
-            <div class="col">
-
-                <!-- carrusel -->
+    <!-- encabezado -->
+    <div id="menu-cliente">
+    </div>
+    <main role="main">
+        <div class="container">
+            <section class="text-center">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -84,113 +48,521 @@
                         <span class="visually-hidden">Siguiente</span>
                     </button>
                 </div>
-
-                <!-- productos -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen1.png" width="225" height="400" alt="">
-                            <br>
-                            DISPONIBLE <br>
-                            $2.205 <br>
-                            Inaba churu at&uacute;n con salmon <br>
-                            En stock 3 unidades
+            </section>
+        </div>
+    </main>
+    <div class="albun py-2 bg-light">
+        <div class="container">
+            <div id="producto" class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen1.png" class="card-img-top producto-tamaño" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen2.png" width="225" height="400" alt="">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-comun fw-bold">
+                                    $2.205
+                                </span>
+                                <span class="precio-oferta fw-bold">
+                                    $1.790
+                                </span>
+                            </div>
                             <br>
-                            NO DISPONIBLE <br>
-                            $36.990 <br>
-                            taste of the wild pacific stream adulto salmon<br>
-                            En stock 0 unidades
+                            Inaba churu at&uacute;n con salmon
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Línea: Churu
+                                Tipo de golosina para perros y gatos: Snack
+                                Peso neto: 56 g
+                                Sabor: Salmón
+                                Unidades por envase: 4
+                                Formato de venta: Unidad
+                                Unidades por pack: 1
+                                Mascotas recomendadas: Gatos
+                                Textura: Húmedo
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen3.png" width="225" height="400" alt="">
-                            <br>
-                            DISPONIBLE <br>
-                            $4.200 <br>
-                            Belcando | alimento humedo latas <br>
-                            En stock 8 unidades
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen2.png" class="card-img-top producto-tamaño" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <a href="Ficha.html">
-                            <img class="producto" src="img/Imagen4.png" width="225" height="400" alt="">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $36.990
+                                </span>
+                            </div>
                             <br>
-                            DISPONIBLE <br>
-                            $3.490 <br>
-                            Belcando mastercraft topping <br>
-                            En stock 2 unidades
-                            </a>
+                            Taste of the wild pacific stream 
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Especificaciones
+                                Sabor: Salmón
+                                Peso de la unidad: 5.6 kg
+                                Tipo de envase: Bolsa
+                                Tipo de comida para mascotas: Seca
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen5.png" width="225" height="400" alt="">
-                            <br>
-                            DISPONIBLE <br>
-                            $2.990 <br>
-                            Belcando pouch | sobres <br>
-                            En stock 6 unidades
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen3.png" class="card-img-top producto-tamaño" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen6.png" width="225" height="400" alt="">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $4.200
+                                </span>
+                            </div>
                             <br>
-                            DISPONIBLE <br>
-                            $39.900 <br>
-                            Fit formula adulto <br>
-                            En stock 4 unidades
+                            Belcando | alimento humedo latas
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Peso de la unidad: 100 g
+                                Tipo de envase: Sobre
+                                Tipo de comida para mascotas: Húmeda
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen7.png" width="225" height="400" alt="">
-                            <br>
-                            DISPONIBLE <br>
-                            $10.990 <br>
-                            Nomade adulto 3Kg <br>
-                            En stock 5 unidades
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen4.png" class="card-img-top producto-tamaño" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen8.png" width="225" height="400" alt="">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $3.490
+                                </span>
+                            </div>
                             <br>
-                            DISPONIBLE <br>
-                            $65.800 <br>
+                            Belcando mastercraft topping
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Sabor: Pavo
+                                Peso de la unidad: 100 g
+                                Tipo de envase: Sobre
+                                Tipo de comida para mascotas: Humeda
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="carrito.html">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen5.png" class="card-img-top producto-tamaño" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $39.900
+                                </span>
+                            </div>
+                            <br>
+                            Belcando pouch | sobres
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Especificaciones
+                                Peso de la unidad: 125 g
+                                Tipo de envase: Sobre
+                                Tipo de comida para mascotas: Húmeda
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen6.png" class="card-img-top producto-tamaño" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-comun fw-bold">
+                                    $2.205
+                                </span>
+                                <span class="precio-oferta fw-bold">
+                                    $1.790
+                                </span>
+                            </div>
+                            <br>
+                            Fit formula adulto <br><br>
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Sabor: Mix
+                                Peso de la unidad: 20 kg
+                                Tipo de envase: Bolsa
+                                Tipo de comida para mascotas: Seca
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen7.png" class="card-img-top producto-tamaño" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $10.990
+                                </span>
+                            </div>
+                            <br>
+                            Nomade adulto 3Kg <br><br>
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Sabor: Mix
+                                Peso de la unidad: 3 kg
+                                Tipo de envase: Bolsa
+                                Tipo de comida para mascotas: Seca
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen8.png" class="card-img-top producto-tamaño" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $65.800
+                                </span>
+                            </div>
+                            <br>
                             Acana pupy recipe <br>
-                            En stock 3 unidades
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Sabor: Mix
+                                Peso de la unidad: 11.4 kg
+                                Tipo de envase: Bolsa
+                                Tipo de comida para mascotas: Seca
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen9.png" width="225" height="400" alt="">
-                            <br>
-                            DISPONIBLE <br>
-                            $24.990 <br>
-                            Fit formula cahorro <br>
-                            En stock 7 unidades
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen9.png" class="card-img-top producto-tamaño" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen10.png" width="225" height="400" alt="">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $24.990
+                                </span>
+                            </div>
                             <br>
-                            DISPONIBLE <br>
-                            $75.100 <br>
-                            Oven Baked Tradition Grain Free Todas las Razas (11,4 Kilos) <br>
-                            En stock 1 unidades
+                            Fit formula cahorro <br><br>
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Sabor: Mix
+                                Peso de la unidad: 10 kg
+                                Tipo de envase: Bolsa
+                                Tipo de comida para mascotas: Seca
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen11.png" width="225" height="400" alt="">
-                            <br>
-                            DISPONIBLE <br>
-                            $2.205 <br>
-                            Inaba churu at&uacute;n con ostiones (vieiras) <br>
-                            En stock 10 unidades
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen10.png" class="card-img-top producto-tamaño" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" id="producto">
-                            <img class="producto" src="img/Imagen12.png" width="225" height="400" alt="">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $75.100
+                                </span>
+                            </div>
                             <br>
-                            DISPONIBLE <br>
-                            $2.305 <br>
-                            Inaba churu pollo<br>
-                            En stock 5 unidades
+                            Oven Baked Tradition Grain Free Todas las Razas
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Sabor: Pato
+                                Peso de la unidad: 11.34 kg
+                                Tipo de envase: Bolsa
+                                Tipo de comida para mascotas: Seca
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen11.png" class="card-img-top producto-tamaño" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-oferta fw-bold">
+                                    $2.205
+                                </span>
+                            </div>
+                            <br>
+                            Inaba churu at&uacute;n con ostiones <br><br>
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Línea: Snack
+                                Tipo de golosina para perros y gatos: Snack
+                                Peso neto: 14 g
+                                Unidades por envase: 4
+                                Formato de venta: Unidad
+                                Textura: Húmedo
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img src="img/Imagen12.png" class="card-img-top producto-tamaño" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                DISPONIBLE
+                            </div>
+                            <div class="lead text-danger">
+                                <span class="precio-comun fw-bold">
+                                    $2.500
+                                </span>
+                                <span class="precio-oferta fw-bold">
+                                    $2.305
+                                </span>
+                            </div>
+                            <br>
+                            Inaba churu pollo <br><br>
+                            <b>Descipción</b>
+                            <div class="text-truncate">
+                                Línea: Churu Bites
+                                Tipo de golosina para perros y gatos: Snack
+                                Peso neto: 30 g
+                                Sabor: Pollo y salmon
+                                Unidades por envase: 3
+                                Formato de venta: Unidad
+                                Unidades por pack: 1
+                                Mascotas recomendadas: Gatos
+                                Textura: Húmedo
+                            </div>
+                            <b>En stock 5 unidades</b>
+                            <b><a href="">ver mas</a></b>
+                            </p>
+                            <div class="d-flex justify-content-between aling-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="text-center">
+        <h1>Participa en un concurso</h1>
+        <a href="ropa.html">!Click aqui¡</a>
+    </div>
+    <div class="container-fluid">
         <!-- pie de pagina -->
         <div class="row">
             <div class="col-12">
@@ -224,6 +596,22 @@
             </div>
         </div>
     </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+    <script src="js/navbarCli.js"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

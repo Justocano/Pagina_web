@@ -8,42 +8,53 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Registro</title>
+    <title>Misdatos</title>
 </head>
 
 <body>
-    <!-- encabezado -->
-    <div id="menu-inicio">
+    
+    <!-- cabecera -->
+    <div id="menu-cliente">
+
     </div>
     <div class="main py-2 bg-light">
-        <div class="conntainer " id="registro">
+        <div class="conntainer mt-3 " id="registro">
             <section >
-                <h1>Registro</h1>
+                <h1>Mis Datos</h1>
                 <br>
-                <form class="row g-3 needs-validation" id="formulario" action="" >
+                <form class="row g-3 needs-validation" action="" novalidate>
                     <div class="container-fluid" >
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
                                 <div class="mb-3  fw-bold">
                                     <label for="rut" class="form-label">Rut:</label>
-                                    <input type="text" placeholder="ej  2092634874-k" class="form-control" name="rut" id="rut" >
+                                    <input type="text" placeholder="21.355.456-3" class="form-control" id="rut">
                                     <div id="rutlHelp" class="form-text">Ej: 123456789-0</div>
+                                    <div class="invalid-feedback">Debe completar el campo Rut</div>
                                 </div>
                                 <div class="mb-3 fw-bold">
                                     <label for="nombres" class="form-label">Nombres:</label>
-                                    <input type="text" class="form-control" id="nombres" name="nombres" >
+                                    <input type="text" class="form-control" id="nombres" placeholder="Carla maria">
+                                    <div id="nomlHelp" class="form-text">Su información esta totalmente asegurada</div>
+                                    <div class="invalid-feedback">Debe completar el campo Nombres</div>
                                 </div>
                                 <div class="mb-3 fw-bold">
                                     <label for="apellidos" class="form-label">Apellidos:</label>
-                                    <input type="text" class="form-control" id="apellidos" name="apellidos" >
+                                    <input type="text" class="form-control" id="apellidos" placeholder="Condes Albarado" >
+                                    <div id="apelHelp" class="form-text">Su información esta totalmente asegurada</div>
+                                    <div class="invalid-feedback">Debe completar el campo Apellidos</div>
                                 </div>
                                 <div class="mb-3 fw-bold">
                                     <label for="correo" class="form-label">Correo Electrónico:</label>
-                                    <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" >
+                                    <input type="email" class="form-control" placeholder="ca.condes@gmail.com" id="correo" aria-describedby="emailHelp" >
+                                    <div id="emailHelp" class="form-text">Este correo no sera compartido con nadie</div>
+                                    <div class="invalid-feedback">Debe completar el campo Correo Electronico</div>
+                                    
                                 </div>
                                 <div class="mb-3 fw-bold">
                                     <label for="direccion" class="form-label">Dirección:</label>
-                                    <textarea class="form-control" id="direccion" rows="4" ></textarea>
+                                    <textarea class="form-control" id="direccion" rows="4" placeholder="Lira, Santiago, Región Metropolitana" ></textarea>
+                                    <div class="invalid-feedback">Debe completar el campo Dirección</div>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="suscripcion" >
@@ -56,14 +67,17 @@
                                 </div>
                                 <div class="mb-3 fw-bold">
                                     <label for="contraseña" class="form-label">Contraseña:</label>
-                                    <input type="password" class="form-control" id="contraseña" name="contraseña" >
+                                    <input type="password" value="qwerty" class="form-control" id="contraseña" required>
+                                    <div class="invalid-feedback">Debe completar el campo Contraseña</div>
                                 </div>
                                 <div class="mb-3 fw-bold">
                                     <label for="repetircontraseña" class="form-label">Repetir Contraseña:</label>
-                                    <input type="password" class="form-control" id="repetircontraseña" name="repetircontraseña" >
+                                    <input type="password" value="qwerty" class="form-control" id="repetircontraseña" required>
+                                    <div class="invalid-feedback">Debe completar el campo Repetir Contraseña</div>
                                 </div>
-                                <button type="reset" class="btn btn-primary">limpiar</button>
+                                
                                 <button type="submit" class="btn btn-primary">Registrarse</button>
+                                <button type="reset" class="btn btn-primary">limpiar</button>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <table>
@@ -117,8 +131,7 @@
             instagram
         </div>
     </div>
-    <script src="js/Validarfrom.js"></script>
-    <script src="js/navbarInicio.js"></script>
+    <script src="js/navbarCli.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
